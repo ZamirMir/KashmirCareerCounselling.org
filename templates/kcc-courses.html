@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+{% block content %}
+        <!-- Page Header Start -->
+
+        <!-- College and Courses Start  -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                    <p class="section-title bg-white text-center text-primary px-3">Courses
+                    </p>
+                    <h6 class="mb-2">Admissions 2023</h6>
+                    <h1 class="mb-5">Courses We Offer</h1>
+                </div>
+                <div class="row gy-5 gx-4">
+                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item d-flex h-55">
+                            <div class="service-img">
+                                <img class="img-fluid" src="/static/img/kcc-engineer.jpg" alt="">
+                            </div>
+                            <div class="service-text p-5 pt-0">
+                                <div class="service-icon">
+                                    <img class="img-fluid rounded-circle" src="/static/img/kcc-engineer.jpg" alt="">
+                                </div>
+                                <h5 class="mb-3">Engineering</h5>
+                                <a class="btn btn-square rounded-circle" href="{% url 'engineer'%}"><i
+                                        class="bi bi-chevron-double-right"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item d-flex h-55">
+                            <div class="service-img">
+                                <img class="img-fluid" src="/static/img/kcc-doctor.jpg" alt="">
+                            </div>
+                            <div class="service-text p-5 pt-0">
+                                <div class="service-icon">
+                                    <img class="img-fluid rounded-circle" src="/static/img/kcc-doctor.jpg" alt="">
+                                </div>
+                                <h5 class="mb-3">Medical</h5>
+                                <a class="btn btn-square rounded-circle" href="{% url 'medical' %}"><i
+                                        class="bi bi-chevron-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item d-flex h-55">
+                            <div class="service-img">
+                                <img class="img-fluid" src="/static/img/kcc-mba.jpg" alt="">
+                            </div>
+                            <div class="service-text p-5 pt-0">
+                                <div class="service-icon">
+                                    <img class="img-fluid rounded-circle" src="/static/img/kcc-mba.jpg" alt="">
+                                </div>
+                                <h5 class="mb-3">Management</h5>
+                                <a class="btn btn-square rounded-circle" href="{% url 'management' %}"><i
+                                        class="bi bi-chevron-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item d-flex h-55">
+                            <div class="service-img">
+                                <img class="img-fluid" src="/static/img/kcc-pg.png" alt="">
+                            </div>
+                            <div class="service-text p-5 pt-0">
+                                <div class="service-icon">
+                                    <a href="#"> <img class="img-fluid rounded-circle" src="/static/img/kcc-pg.png"
+                                            alt=""></a>
+                                </div>
+                                <h5 class="mb-3">PG-Programmes</h5>
+                                <a class="btn btn-square rounded-circle" href="{% url 'pg'%}"><i
+                                        class="bi bi-chevron-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item d-flex h-55">
+                            <div class="service-img">
+                                <img class="img-fluid" src="/static/img/kcc-law.png" alt="">
+                            </div>
+                            <div class="service-text p-5 pt-0">
+                                <div class="service-icon">
+                                    <img class="img-fluid rounded-circle" src="/static/img/kcc-law.png" alt="">
+                                </div>
+                                <h5 class="mb-3">L A W</h5>
+                                <a class="btn btn-square rounded-circle" href="#"><i
+                                        class="bi bi-chevron-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item d-flex h-55">
+                            <div class="service-img">
+                                <img class="img-fluid" src="/static/img/kcc-ayurvedic.png" alt="">
+                            </div>
+                            <div class="service-text p-5 pt-0">
+                                <div class="service-icon">
+                                    <img class="img-fluid rounded-circle" src="/static/img/kcc-ayurvedic.png" alt="">
+                                </div>
+                                <h5 class="mb-3">Ayurvedic / BUMS</h5>
+                                <a class="btn btn-square rounded-circle" href="#"><i
+                                        class="bi bi-chevron-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- College and Courses End -->
+
+        <!-- Services -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <p class="section-title bg-white text-start text-primary pe-3">Services!</p>
+                        <h1 class="mb-4">Few Reasons Why Students Choosing Us!</h1>
+                        <p class="mb-4">We Provide Quality Career, Counseling and Admission Services at an affordable
+                            prices, We Believe In Providing Students Colleges / Universites of their own Choice, Where
+                            they want to persue eduction in India. We are providing admissions in NAAC A+ Accreditation
+                            Colleges throughout Inida.
+                        </p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Expert Counselling Services</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Indentify Course, State/City &
+                            College/University</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Aplication and Documentation Process</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Secure Admission</p>
+                        <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href="{% url 'admission'%}">Explore More</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="rounded overflow-hidden">
+                            <div class="row g-0">
+                                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                    <div class="text-center bg-secondary py-5 px-4">
+                                        <img class="img-fluid mb-4" src="/static/img/service.png" alt="">
+                                        <h1 class="display-6">Counselling</h1>
+                                        <span class="fs-5 fw-semi-bold text-primary">Career Counselling</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+
+                                    <div class="text-center bg-primary py-5 px-4">
+                                        <img class="img-fluid mb-4" src="/static/img/experience.png" alt="kcc">
+                                        <h1 class="display-6 text-white">Admission</h1>
+                                        <span class="fs-5 fw-semi-bold text-secondary">Admission Guidance</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                    <div class="text-center bg-primary py-5 px-4">
+                                        <img class="img-fluid mb-4" src="/static/img/client.png" alt="">
+                                        <h1 class="display-6">Application</h1>
+                                        <span class="fs-5 fw-semi-bold text-secondary">Application And
+                                            Documentation</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                    <div class="text-center bg-secondary py-5 px-4">
+                                        <img class="img-fluid mb-4" src="/static/img/service.png" alt="">
+                                        <h1 class="display-6 text-white">Enrollment</h1>
+                                        <span class="fs-5 fw-semi-bold text-primary">Secure Admission With Joining
+                                            Letter</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+
+{% endblock %}

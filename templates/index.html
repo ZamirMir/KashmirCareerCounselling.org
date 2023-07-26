@@ -1,0 +1,474 @@
+{% extends 'base.html' %}
+{% block content %}
+        <!-- Carousel Start -->
+        <div class="container-fluid px-0 mb-5">
+            <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="w-100" src="/static/img/kcc-hero1.jpg" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row justify-content-end">
+                                    <div class="col-lg-8 text-end">
+                                        <p class="fs-4 text-white">Welcome To The Kashmir Career And Counseling
+                                            Services.</p>
+                                        <h1 class="display-1 text-white mb-5 animated slideInRight">The Kashmir's 1st
+                                            Online Career Portal </h1>
+                                        <a href="{% url 'admission' %}"
+                                            class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight">Explore
+                                            More</a>
+                                    </div>
+                                    <!-- new tag  -->
+                                    <div class="contianer">
+                                        <div clas="crousel-item active">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="/static/img/kcc-hero2.jpg" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row justify-content-end">
+
+                                    <div class="col-lg-8 text-end">
+                                        <p class="fs-4 text-white">College / Universites Of Your Choise </p>
+                                        <h1 class="display-1 text-white mb-5 animated slideInRight">Online Admission
+                                            Guidance And Facilities</h1>
+                                        <a href="{% url 'contact' %}"
+                                            class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight">Book
+                                            Your Seat Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="/static/img/kcc-hero3.jpg" alt="Image">
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row justify-content-end">
+                                    <div class="col-lg-8 text-end">
+                                        <p class="fs-4 text-white">From Here To Any Where You Want To Study</p>
+                                        <h1 class="display-1 text-white mb-5 animated slideInRight">
+                                            Education For Any One, Anywhere in India</h1>
+                                        <a href="{% url 'admission' %}"
+                                            class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft">Explore
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- College and Courses Start  -->
+        <div class="container-xxl">
+            <div class="container">
+                <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                    <p class="section-title bg-white text-center text-primary px-3">Admission 2023 </p>
+                    <h1 class="mb-5">Courses & Colleges</h1>
+                </div>
+                <div class="row gy-5 gx-4">
+                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item d-flex h-55">
+                            <div class="service-img">
+                                <img class="img-fluid" src="/static/img/kcc-engineer.jpg" alt="">
+                            </div>
+                            <div class="service-text p-5 pt-0">
+                                <div class="service-icon">
+                                    <img class="img-fluid rounded-circle" src="/static/img/kcc-engineer.jpg" alt="">
+                                </div>
+                                <h5 class="mb-3">Engineering</h5>
+                                <a class="btn btn-square rounded-circle" href="{% url 'engineer' %}"><i
+                                        class="bi bi-chevron-double-right"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item d-flex h-55">
+                            <div class="service-img">
+                                <img class="img-fluid" src="/static/img/kcc-doctor.jpg" alt="">
+                            </div>
+                            <div class="service-text p-5 pt-0">
+                                <div class="service-icon">
+                                    <img class="img-fluid rounded-circle" src="/static/img/kcc-doctor.jpg" alt="">
+                                </div>
+                                <h5 class="mb-3">Medical</h5>
+                                <a class="btn btn-square rounded-circle" href="{% url 'medical' %}"><i
+                                        class="bi bi-chevron-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item d-flex h-55">
+                            <div class="service-img">
+                                <img class="img-fluid" src="/static/img/kcc-mba.jpg" alt="">
+                            </div>
+                            <div class="service-text p-5 pt-0">
+                                <div class="service-icon">
+                                    <img class="img-fluid rounded-circle" src="/static/img/kcc-mba.jpg" alt="">
+                                </div>
+                                <h5 class="mb-3">Management</h5>
+                                <a class="btn btn-square rounded-circle" href="{% url 'management' %}"><i
+                                        class="bi bi-chevron-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item d-flex h-55">
+                            <div class="service-img">
+                                <img class="img-fluid" src="/static/img/kcc-pg.png" alt="">
+                            </div>
+                            <div class="service-text p-5 pt-0">
+                                <div class="service-icon">
+                                    <a href="{% url 'pg' %}"> <img class="img-fluid rounded-circle" src="/static/img/kcc-pg.png"
+                                            alt=""></a>
+                                </div>
+                                <h5 class="mb-3">PG-Programmes</h5>
+                                <a class="btn btn-square rounded-circle" href="{% url 'pg' %}"><i
+                                        class="bi bi-chevron-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item d-flex h-55">
+                            <div class="service-img">
+                                <img class="img-fluid" src="/static/img/kcc-law.png" alt="">
+                            </div>
+                            <div class="service-text p-5 pt-0">
+                                <div class="service-icon">
+                                    <img class="img-fluid rounded-circle" src="/static/img/kcc-law.png" alt="">
+                                </div>
+                                <h5 class="mb-3">L A W</h5>
+                                <a class="btn btn-square rounded-circle" href="{% url 'courses' %}"><i
+                                        class="bi bi-chevron-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item d-flex h-55">
+                            <div class="service-img">
+                                <img class="img-fluid" src="/static/img/kcc-ayurvedic.png" alt="">
+                            </div>
+                            <div class="service-text p-5 pt-0">
+                                <div class="service-icon">
+                                    <img class="img-fluid rounded-circle" src="/static/img/kcc-ayurvedic.png" alt="">
+                                </div>
+                                <h5 class="mb-3">Ayurvedic / BUMS</h5>
+                                <a class="btn btn-square rounded-circle" href="{% url 'courses' %}"><i
+                                        class="bi bi-chevron-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- College and Courses End -->
+
+        <!-- Services -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <p class="section-title bg-white text-start text-primary pe-3">Services!</p>
+                        <h1 class="mb-4">Few Reasons Why Students Choosing Us!</h1>
+                        <p class="mb-4">We Provide Quality Career, Counseling and Admission Services at an affordable
+                            prices, We Believe In Providing Students Colleges / Universites of their own Choice, Where
+                            they want to persue eduction in India. We are providing admissions in NAAC A+ Accreditation
+                            Colleges throughout Inida.
+                        </p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Expert Counselling Services</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Indentify Course, State/City &
+                            College/University</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Aplication and Documentation Process</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Secure Admission</p>
+                        <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href="{% url 'admission' %}">Explore
+                            More</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="rounded overflow-hidden">
+                            <div class="row g-0">
+                                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                    <div class="text-center bg-secondary py-5 px-4">
+                                        <img class="img-fluid mb-4" src="/static/img/service.png" alt="">
+                                        <h1 class="display-6">Counselling</h1>
+                                        <span class="fs-5 fw-semi-bold text-primary">Career Counselling</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+
+                                    <div class="text-center bg-primary py-5 px-4">
+                                        <img class="img-fluid mb-4" src="/static/img/experience.png" alt="kcc">
+                                        <h1 class="display-6 text-white">Admission</h1>
+                                        <span class="fs-5 fw-semi-bold text-secondary">Admission Guidance</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                    <div class="text-center bg-primary py-5 px-4">
+                                        <img class="img-fluid mb-4" src="/static/img/client.png" alt="">
+                                        <h1 class="display-6">Application</h1>
+                                        <span class="fs-5 fw-semi-bold text-secondary">Application And
+                                            Documentation</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                    <div class="text-center bg-secondary py-5 px-4">
+                                        <img class="img-fluid mb-4" src="/static/img/service.png" alt="">
+                                        <h1 class="display-6 text-white">Enrollment</h1>
+                                        <span class="fs-5 fw-semi-bold text-primary">Secure Admission With Joining
+                                            Letter</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-end">
+                    <div class="col-lg-6">
+                        <div class="row g-2">
+                            <div class="col-6 position-relative wow fadeIn" data-wow-delay="0.7s">
+                                <div class="about-experience bg-secondary rounded">
+                                    <h3 class="display-1 mb-0">Register</h3>
+                                    <small class="fs-5 fw-bold">With Us Now!</small>
+                                </div>
+                            </div>
+                            <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
+                                <img class="img-fluid rounded" src="/static/img/kcc-doctor.jpg">
+                            </div>
+                            <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
+                                <img class="img-fluid rounded" src="/static/img/kcc-engineer.jpg">
+                            </div>
+                            <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
+                                <img class="img-fluid rounded" src="/static/img/kcc-mba.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <p class="section-title bg-white text-start text-primary pe-3">About Us</p>
+                        <h1 class="mb-4">Know About Our Company & Our History</h1>
+                        <p class="mb-4">Kashmir Career And Counseling Pvt Ltd.Popularly known as KCC, Kashmir's
+                            Educational Services started as a small entrepreneurial venture in 2018 with the vision of
+                            spreading educational awareness and providing admission guidance to students based on
+                            aptitude, Interest and personality. Our Signature services include Career Counselling,
+                            Admission Guidance, and Institutional Promotion. We are a pioneer of Online Career and
+                            Counseling, first of its kind ever used in Kashmir for Career Counselling of students, based
+                            on which most suitable career path are advised to students.
+                        </p>
+                        <div class="row g-5 pt-2 mb-5">
+                            <div class="col-sm-6">
+                                <img class="img-fluid mb-4" src="/static/img/service.png" alt="">
+                                <h5 class="mb-3">Online Chat Support</h5>
+                                <span>
+                                    Kashmir Career and Counselling (kCC) is providing 24*7, 365 Days, Online Chat
+                                    Support to their Enrolled Students.
+                                    We are just one Click away from you, present at the right bottom side of the
+                                    Website.
+                                </span>
+                            </div>
+                            <div class="col-sm-6">
+                                <img class="img-fluid mb-4" src="/static/img/experience.png" alt="">
+                                <h5 class="mb-3">Dedicated Services</h5>
+                                <span>We are Providing Online facility of Career,Counselling and Admission Facilities,
+                                    Proper and secure Admsisson with Joining Letter from authorized institutes. </span>
+                            </div>
+                        </div>
+                        <a class="btn btn-secondary rounded-pill py-3 px-5" href="{% url 'contact' %}">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Banner Start -->
+        <div class="container-fluid banner py-5" data-parallax="scroll" data-image-src="/static/img/kcc-bg-allll.png">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                        <div class="row g-4 align-items-center">
+                        </div>
+                    </div>
+                    <div class="wow fadeIn" data-wow-delay="0.5s">
+                        <div class="row g-4 ">
+                            <div class="col-sm-4">
+                            </div>
+                            <div class="col-sm- text-center ">
+                                <h2 class="text-primary  mb-3">Scholarships For KCC Students</h2>
+
+                                <p class="text-light bg-primary border border-danger mb-4"><b>A Scholarship is an Award
+                                        of financial aid for a student to further their Education. KCC Offers : Merit
+                                        Based | Student Specific| Need Based | Program / Career Based Scholarship. </b>
+                                </p>
+                                <a class="btn btn-secondary rounded-pill py-2 px-4" href="{% url 'scholarship' %}">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Banner End -->
+
+        <!-- Gallery Start -->
+        <div class="container-xxl py-5 px-0">
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Gallery</p>
+                <h1 class="mb-5"> GALLERY</h1>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row g-0">
+                        <div class="col-12">
+                            <a class="d-block" href="/static/img/kcc-doctor1.jpg" data-lightbox="gallery">
+                                <img class="img-fluid" src="/static/img/kcc-doctor1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a class="d-block" href="/static/img/kcc-ayurvedic.png" data-lightbox="gallery">
+                                <img class="img-fluid" src="/static/img/kcc-ayurvedic.png" alt="">
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="row g-0">
+                        <div class="col-12">
+                            <a class="d-block" href="/static/img/kcc-electronics.jpg" data-lightbox="gallery">
+                                <img class="img-fluid" src="/static/img/kcc-electronics.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a class="d-block" href="/static/img/kcc-law.png" data-lightbox="gallery">
+                                <img class="img-fluid" src="/static/img/kcc-law.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+
+                    <div class="row g-0">
+                        <div class="col-12">
+                            <a class="d-block" href="/static/img/kcc-doctor3.jpg" data-lightbox="gallery">
+                                <img class="img-fluid" src="/static/img/kcc-doctor3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a class="d-block" href="/static/img/kcc-doctor.jpg" data-lightbox="gallery">
+                                <img class="img-fluid" src="/static/img/kcc-doctor.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="row g-0">
+                        <div class="col-12">
+                            <a class="d-block" href="/static/img/kcc-engineer.jpg" data-lightbox="gallery">
+                                <img class="img-fluid" src="/static/img/kcc-engineer.jpg">
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a class="d-block" href="/static/img/kcc-management3.jpg" data-lightbox="gallery">
+                                <img class="img-fluid" src="/static/img/kcc-management3.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Gallery End -->
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                    <p class="section-title bg-white text-center text-primary px-3">Testimonial</p>
+                    <h1 class="mb-5">What Students Say About Us</h1>
+                </div>
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="testimonial-img">
+                            <img class="img-fluid animated pulse infinite" src="/static/img/kcc-student5.jpg" alt="No student image found">
+                            <img class="img-fluid animated pulse infinite" src="/static/img/kcc-student2.jpg" alt="">
+                            <img class="img-fluid animated pulse infinite" src="/static/img/kcc-student3.jpg" alt="">
+                            <img class="img-fluid animated pulse infinite" src="/static/img/kcc-student4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="owl-carousel testimonial-carousel">
+                            <div class="testimonial-item">
+                                <img class="img-fluid mb-3" src="/static/img/kcc-student5.jpg" alt="No pic">
+                                <p class="fs-5">My experience at KCC can be fittingly summed up in one word-SURREAL. I
+                                    have rarely come across such people who have lent such unconditional support. I
+                                    might have bothered them with innumerable queries and favors, but the counselors
+                                    have accommodated all my eccentric requests. My achievements would not have been
+                                    possible without such a stellar staff. I take this opportunity to appreciate the
+                                    efforts put in by each and everyone of you. Thank you.
+
+                                </p>
+                                <h5>Akash Nabi</h5>
+                                <span class="text-primary">NIIMS University Jaipur</span>
+                            </div>
+                            <div class="testimonial-item">
+                                <img class="img-fluid mb-3" src="/static/img/kcc-student2.jpg" alt="">
+                                <p class="fs-5">My research for good University and a Dream Job got the perfect shape
+                                    after getting in touch with Kashmir Career and Counselling Services. They provided
+                                    me realistic counselling based on my profile. I indeed appreciate the Services and
+                                    personal attention received.
+                                </p>
+                                <h5>Faisal Showkat</h5>
+                                <span class="text-primary">Punjab Technical University</span>
+                            </div>
+                            <div class="testimonial-item">
+                                <img class="img-fluid mb-3" src="/static/img/kcc-student3.jpg" alt="">
+                                <p class="fs-5"> Kashmir Career and Counselling Services experienced Counsellors
+                                    understood my requirement and helped me selecting right Institute in accordance with
+                                    my priority.
+                                </p>
+                                <h5>Ishfaq Ahmad Bhat</h5>
+                                <span class="text-primary">Lovely Professional University</span>
+                            </div>
+                            <div class="testimonial-item">
+                                <img class="img-fluid mb-3" src="/static/img/kcc-student4.jpg" alt="">
+                                <p class="fs-5">I want to recommend Kashmir Career and Counselling Services because of
+                                    their Professional Service. KCC not only helps for the smooth processing of the
+                                    application but also acts as the local Guardian to the outside student like me!
+                                </p>
+                                <h5>Nadeem Ahmad</h5>
+                                <span class="text-primary"> Chandigarh Group of Colleges</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+{% endblock %}
